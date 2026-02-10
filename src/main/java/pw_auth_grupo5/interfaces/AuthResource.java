@@ -22,7 +22,7 @@ public class AuthResource {
 
         if (usuarioEncontrado != null && usuarioEncontrado.password.equals(password)) {
 
-            String issuer = "matricular-auth";
+            String issuer = "matricula-auth";
             long ttl = 3600;
             Instant now = Instant.now();
             Instant exp = now.plusSeconds(ttl);
